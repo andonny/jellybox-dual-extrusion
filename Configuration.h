@@ -619,7 +619,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,1600,140}  ///LG JellyBox with ACME thread pitch 2mm and hobbeld gear from Caizls
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,1600,500,500}  ///LG JellyBox with ACME thread pitch 2mm and hobbeld gear from Caizls
+//AG Changed {80,80,1600,140} to {80,80,1600,500,500} because 500 and 500 is the correct stepping for both extruders
 #define DEFAULT_MAX_FEEDRATE          {300, 300, 10, 70}    // (mm/sec) FG tested before was {300,300,5,25}
 #define DEFAULT_MAX_ACCELERATION      {6000,6000,100,15000}    // X, Y, Z, E maximum start speed for accelerated moves.
 
@@ -628,9 +629,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 #define DEFAULT_TRAVEL_ACCELERATION   4000    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instantaneously)
-#define DEFAULT_XYJERK                20.0    // (mm/sec)
+#define DEFAULT_XYJERK                60.0    // (mm/sec) AG changed from 20 to 60
 #define DEFAULT_ZJERK                 0.4     // (mm/sec)
-#define DEFAULT_EJERK                 10.0    // (mm/sec)
+#define DEFAULT_EJERK                 15.0    // (mm/sec) AG changed from 10 to 15
 
 
 //=============================================================================
