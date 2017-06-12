@@ -282,7 +282,7 @@ Here are some standard links for getting your machine calibrated:
 //this prevents dangerous Extruder moves, i.e. if the temperature is under the limit
 //can be software-disabled for whatever purposes by
 //AG disabled the line below
-//#define PREVENT_DANGEROUS_EXTRUDE
+#define PREVENT_DANGEROUS_EXTRUDE
 //if PREVENT_DANGEROUS_EXTRUDE is on, you can still disable (uncomment) very long bits of extrusion separately.
 //Disabled the line below
 //#define PREVENT_LENGTHY_EXTRUDE
